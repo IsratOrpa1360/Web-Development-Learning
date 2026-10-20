@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF - 8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+</head>
+
+<body bgcolor="lightgrey">
+
+    <h1 align="center">
+        <font color="maroon">Welcome to my webpage!</font>
+        
+    </h1>
+    <hr>
+
+    <h2>
+        <font color="maroon">1. Introduction</font>
+    </h2>
+    <p>
+        Hello! My name is <b>Isratul Ibnat Orpa.</b>
+        I am a <i>Computer Science Student.</i>
+        I want to become a <u>Software Engineer.</u>
+    </p>
+    <p>
+        HTML stands for
+        <strong>HyperText Markup Language.</strong>
+        It is used to create <em>webpages.</em>
+    </p>
+
+    <p>
+        This is <mark>highlighted text</mark>.
+        This is <small>small text</small>.
+        This is <del>deleted text</del>.
+        This is <ins>inserted text</ins>.
+    </p>
+
+    <p>
+        Water formula: H<sub>2</sub>0 <br>
+        Mathematical expression: X<sup>2</sup>
+    </p>
+    <hr>
+
+    <h2><font color="maroon">2. Text Color and Size</font></h2>
+
+    <p><font color="red">This text is red.</font></p>
+    <p><font color="green">This text is green.</font></p>
+    <p><font color="#FF6600">This text is orange.</font></p>
+
+    <p><big>This is big text.</big></p>
+    <p><tt>This is typewriter-style text.</tt></p>
+
+    <hr>
+    <h2><font color="maroon">3. Links</font></h2>
+
+    <p>
+        Visit
+        <a href="https://www.google.com" target="_blank">
+            Google
+        </a>
+    </p>
+    <p>
+        Send me an email:
+        <a href="mailto:isratulibnatorpa1360@gmail.com">Email Me </a>
+        </p>
+
+        <p>
+            <a href="#contact">Go to contact Section</a>
+        </p>
+
+        <hr>
+
+        <h2><font color="maroon">4.Image</font></h2>
+        <img
+            src="https://placehold.co/300*150"
+            alt="Sample Image"
+            width="300"
+            height="150"
+            >
+
+            <p>This is an example image.</p>
+            <hr>
+            <h2><font color="maroon">5. Lists</font></h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>HTML</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ol>
+
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Ceates the structure of a webpage.</dd>
+
+                <dt>CSS</dt>
+                <dd>Styles the webpage.</dd>
+            </dl>
+
+            <hr>
+
+            <h2><font color="maroon">6. Student information Table</font></h2>
+            <table border="1" cellpadding="8"></table>
+                <caption>Student Details</caption>
+
+                <tr>
+
+                 <th>ID</th>
+                 <th>Name</th>
+                 <th>Department</th>
+                </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Orpa</td>
+                <td>CSE</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Adnan</td>
+                <td>EEE</td>
+             </tr>
+             </table>
+
+             <hr>
+
+            <h2><font color="maroon">7. Registration Form</font></h2>
+
+             <form action="#" method="get">
+                 <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                 <br><br>
+
+             <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br><br>
+
+                <p>Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <p>Choose your skills:</p>
+
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="java" name="skills" value="Java">
+                    <label for="java">Java</label>
+
+                    <br><br>
+
+                    <label for="department">Department:</label>
+
+                 <select id="department" name="department">
+                     <option value="cse">CSE</option>
+                      <option value="eee">EEE</option>
+                      <option value="bba">BBA</option>
+                </select>
+
+                <br><br>
+
+                     <label for="message">Your Message:</label>
+                     <br>
+
+                    <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+                     <br><br>
+
+                    <button type="submit">Submit</button>
+                     <button type="reset">Reset</button>
+
+                </form>
+
+             <hr>
+
+  
+            <h2><font color="maroon">8. Other HTML Elements<></font></h2>
+
+            <details>
+              <summary>Click to learn about HTML</summary>
+             <p>HTML uses tags to structure text, images,
+                 links, tables, forms, and other content.</p>
+             </details>
+
+             <p>Progress:</p>
+              <progress value="70" max="100"></progress>
+
+             <p>Storage usage:</p>
+            <meter value="0.6">60%</meter>
+
+             <p>Current time example: <time>9:30</time></p>
+
+              <pre>
+              This is preformatted text.
+              Spaces and line breaks are preserved.
+             </pre>
+
+            <blockquote>
+             "Learning never exhausts the mind."
+            </blockquote>
+
+              <p>Inline code example: <code>print("Hello World")</code></p>
+
+             <hr>
+
+
+             <h2><font color="maroon">9. Contact Information</font></h2>
+
+            <address>
+                 Name: Isratul Ibnat Orpa<br>
+                  Department: Computer Science<br>
+                 Email: isratulibnatorpa1360@email.com
+             </address>
+
+             <p>
+                 <a href="#top">Back to Top</a>
+             </p>
+
+            <hr>
+
+             <footer align="center">
+              <p>
+                 <font color="blue">
+                     &copy; 2026 My First Webpage
+                 </font>
+            </p>
+            </footer>
+
+    </body>
+</html>
+
+
+
+
