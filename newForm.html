@@ -1,99 +1,274 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My First Webpage</title>
-     </head>
-        <body>
-            <h1 align="center"><font color="blue">My Student Website</font></h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Website</title>
+
+    <style>
+       
+        body {
+            font-family: Georgia, serif;
+            margin: 8px;
+        }
+
+       
+        header {
+            background-color: #20558a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+       
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: #20558a;
+        }
+
+      
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .details section + section {
+            border-left: 1px solid gray;
+            padding-left: 15px;
+        }
+
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid skyblue;
+            padding: 6px;
+        }
+
+        th {
+            background-color: #d9effa;
+        }
+
+        
+        .contact {
+            background-color: #e5f4fc;
+            border: 1px solid skyblue;
+            padding: 10px;
+        }
+
+        .contact h2 {
+            margin-top: 0;
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            width: 95%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        .contact textarea {
+            height: 55px;
+        }
+
+        .contact button {
+            background-color: #087dc1;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: darkblue;
+        }
+
+       
+        hr {
+            border: none;
+            border-top: 1px solid silver;
+            margin: 15px 0;
+        }
+
+       
+        footer {
+            background-color: #20558a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+     
+        @media (max-width: 650px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .details {
+                grid-template-columns: 1fr;
+            }
+
+            .details section + section {
+                border-left: none;
+                border-top: 1px solid gray;
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MY STUDENT WEBSITE</h1>
+        <p>Learn &nbsp; • &nbsp; Explore &nbsp; • &nbsp; Create</p>
+    </header>
+
+    <div class="container">
+
+       
+        <main>
+
+            <h2>Welcome to My Website!</h2>
+            <p>Hi! My name is Orpa. I am a student who loves only Mathematics.</p>
+
+            <h2>About Me</h2>
+            <p>I am learning HTML to create my own website.
+            My goal is to become a professional software developer.</p>
+
+            <div class="details">
+
+                <section>
+                    <h2>My Favorite Subjects</h2>
+                    <ol>
+                        <li>Computer Science</li>
+                        <li>Mathematics</li>
+                        <li>Physics</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>My Skills</h2>
+                    <ul>
+                        <li>HTML Basic</li>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </section>
+
+            </div>
 
             <hr>
-            <h2><font color="blue">Welcome to My website!</font></h2>
-            
-                <p>Hi! My name is Orpa.I am a student who loves only Mathematics. </p>
 
-            <h2><font color="blue">About Me</font></h2>
-            <p>I am learning HTML, to create my own website.My goal is to become a professional software developer.</p>
-
-             <h2><font color="blue">My Favorite Hobby</font></h2>
-             <ol>
+            <h2>My Favorite Hobby</h2>
+            <ol>
                 <li>Sleeping</li>
                 <li>Watching Drama</li>
                 <li>Cooking</li>
                 <li>Eating</li>
             </ol>
 
-            <h2><font color="blue">My Favorite Subjects</font></h2>
-             <ol>
-                <li>Computer Science</li>
-                <li>Mathematics</li>
-                <li>Physics</li>
-                
-            </ol>
+            <hr>
 
-             <h2><font color="blue">My Skills</font></h2>
-             <ul>
-                <li>HTML Basic</li>
-                <li>Problem Solving</li>
-                <li>Teamwork</li>
-            </ul>
+            <h2>Student Information</h2>
 
-              <h2><font color="blue">Student Information</font></h2>
-                <table>
-                    <tr>
-                        <td>name</td>
-                        <td>Orpa</td>
-                        <td>Faysal</td>
-                    </tr>
-                    <tr>
-                        <td>Department</td>
-                        <td>CSE</td>
-                        <td>EEE</td>
-                    </tr>
-                    <tr>
-                        <td>Semester</td>
-                        <td>10th</td>
-                        <td>11th</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Semester</th>
+                </tr>
+                <tr>
+                    <td>Orpa</td>
+                    <td>CSE</td>
+                    <td>10th</td>
+                </tr>
+                <tr>
+                    <td>Faysal</td>
+                    <td>EEE</td>
+                    <td>11th</td>
+                </tr>
+            </table>
 
-                <h2><font color="blue">Contact Me</font></h2>
-                <form>
-                 <label for="name"><b>Full Name:</b></label><br>
-                <input type="text" id="name" name="Full Name" placeholder="Enter your name"><br><br>
+            <h2>Useful Website</h2>
+            <p>Learn more from
+                <a href="https://www.w3schools.com/">W3Schools</a>.
+            </p>
 
-                 <label for="email"><b>Email:</b></label><br>
-                <input type="email" id="email" name="Email" placeholder="Enter your email">
+            <hr>
+
+        </main>
+
+       
+        <aside class="contact">
+
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="name"><b>Full Name:</b></label>
+                <br>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name">
+
+                <br>
+
+                <label for="email"><b>Email:</b></label>
+                <br>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email">
+
+                <br>
+
+                <p><b>Gender:</b></p>
+
+                <input type="radio" id="male"
+                       name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female"
+                       name="gender" value="female">
+                <label for="female">Female</label>
+
                 <br><br>
 
-                <p><b>Gender :</b><p>
-                     <input type="radio" id="male" name="gender" value="male">
-                     <label for="male">Male</label>
-
-                    <input type="radio" id="female" name="gender" value="female">
-                     <label for="female">Female</label>
+                <label for="message"><b>Message:</b></label>
+                <br>
+                <textarea id="message" name="message"
+                          placeholder="Write your message..."></textarea>
 
                 <br><br>
 
-                   <label for="message"><b>Messages:</b></label>
-                     <br>
-                        <textarea id="message" name="message" rows="4" cols="30" placeholder="Write your mesagge......"></textarea>
+                <button type="submit">Submit</button>
+            </form>
 
-                     <br><br>
+        </aside>
 
-                    <button type="submit">Submit</button>
-                    
+    </div>
 
-                </form>
-            </body>
-            </html>
+    <footer>
+        &copy; 2026 My Student Website | All Rights Reserved
+    </footer>
 
-
-
-
-
-
-            
-
-           
+</body>
+</html>
